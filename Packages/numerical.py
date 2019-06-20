@@ -27,3 +27,17 @@ def factorial(n):
         fact = fact * i
     return fact
 factorial(4)
+
+
+
+# Function to validate the phone number
+
+import re
+def phoneNumberValidator(number):
+    pattern = '[6-9][0-9]{9}$|[0][6-9][0-9]{9}$|^[+][9][1][6-9][0-9]{9}$'
+    if re.match(pattern, str(number)):
+          print("valid number")
+    else:
+          print("invalid number")
+phoneNumberValidator(738252496)
+
